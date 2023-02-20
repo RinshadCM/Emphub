@@ -1,0 +1,2 @@
+splice() -To remove an element from array
+IndexOf()- To find the index of array
