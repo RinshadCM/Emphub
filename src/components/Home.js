@@ -28,9 +28,8 @@ export default function Home() {
 
     return (
         <>
-            <h1 className='text-center p-2' style={{ color: 'orange' }}>Employee Management System</h1>
             <div className='text-center p-2 fs-5'>
-                <p style={{ textAlign: 'center', fontSize: '17px' }} className='text-center'>Welcome to our Employee Management Platform! Our user-friendly interface allows you to manage employee information, attendance, benefits, compensation, and communication easily. With real-time updates, customizable reporting, and seamless integration with other tools, you can stay on top of your workforce and make informed decisions. Experience a modern HR solution with us today!</p>
+                <p style={{ textAlign: 'center', fontSize: '17px' }} className='text-center'>Welcome to EmpHub, your all-in-one solution for employee management. With EmpHub, you can easily add, update, and delete employee details, including their name, age, position, salary, image, and more. Our intuitive interface makes it easy to stay organized and keep track of your team's information. Plus, with secure data storage and user-friendly features, you can trust that your employees' information is always safe and accessible</p>
                 <Link to='/add'>
                     <Button
                         variant="outline-info"
@@ -72,9 +71,13 @@ export default function Home() {
                                         <td>
                                             <div className='d-flex align-items-center'>
                                                 <img
-                                                    src='https://mdbootstrap.com/img/new/avatars/8.jpg'
+                                                    src={item.image}
                                                     alt=''
-                                                    style={{ width: '45px', height: '45px' }}
+                                                    onError={({ currentTarget }) => {
+                                                        currentTarget.onerror = null; // prevents looping
+                                                        currentTarget.src="https://i.postimg.cc/1Xw2qMC6/ggyv.jpg";
+                                                      }}
+                                                    style={{ width: '60px', height: '60px' }}
                                                     className='rounded-circle'
                                                 />
                                                 <div className='ms-3'>

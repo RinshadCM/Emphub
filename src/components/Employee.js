@@ -1,18 +1,6 @@
 const employee=[
     {
         id:1,
-        name:'Saneen',
-        age:22,
-        desig:'Developer',
-        salary:'80000',
-        email:'saneen@gmail.com',
-        department:'IT',
-        position:'Junior',
-        image:''
-
-    },
-    {
-        id:2,
         name:'Rinshad',
         age:22,
         desig:'Developer',
@@ -20,7 +8,20 @@ const employee=[
         email:'rinshadcm34@gmail.com',
         department:'IT',
         position:'Junior',
-        image:''
+        image:'https://i.postimg.cc/mgbNYVp4/SAVE-20191121-082740eded.jpg'
+
+    },
+    {
+        id:2,
+        name:'Saneen',
+        age:22,
+        desig:'Developer',
+        salary:'80000',
+        email:'saneen@gmail.com',
+        department:'IT',
+        position:'Junior',
+        image:'https://i.postimg.cc/4nRKWFN5/vyfctf.jpg'
+        
 
     },
     {
